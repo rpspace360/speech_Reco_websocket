@@ -6,13 +6,6 @@
     </head>
     <body>
         <script>
-            $.ajax({
-  type: "POST",
-  url: "/home/rpsingh/collegeconnect/python_tutorial/speech.py",
-  data: { param: "none"}
-}).done(function( o ) {
-   window.console.log("adasd")
-});
             var ws = new WebSocket("ws://127.0.0.1:5678/"),
                 messages = document.createElement('ul');
             ws.onmessage = function (event) {
